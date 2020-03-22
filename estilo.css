@@ -1,0 +1,17 @@
+#principal{
+    width: 920px;
+    margin: 0 auto;
+}
+.sequencia{
+    background-color: #ccc;
+    border: 1px solid;
+    float:left;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 4em;
+}
+#fila2,#fila3,#resultado{
+    clear: both;
+}
