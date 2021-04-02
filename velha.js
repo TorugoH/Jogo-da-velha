@@ -20,7 +20,9 @@ const colocaElemento=(ids)=>{
         x=0        
          }
    }
-        verificaGanhou()
+        if(verificaGanhou()!=true){
+            document.getElementById('result').innerHTML=`Deu velha`
+        }
 }
 const verificaGanhou=()=>{
     let campo=document.getElementById('campo').innerHTML
@@ -33,24 +35,31 @@ const verificaGanhou=()=>{
     let campo8=document.getElementById('campo8').innerHTML
     let campo9=document.getElementById('campo9').innerHTML
     if((campo===campo2) && (campo2===campo3 )|| (campo===campo4) && (campo4===campo7)){
-       document.getElementById('result').innerHTML=`O vencendor foi: ${campo}`
+       document.getElementById('result').innerHTML=`vencendor foi: ${campo}`
+       return true
     }
      if(campo4==campo5 && campo5==campo6){
-        document.getElementById('result').innerHTML=`o vencendor foi: ${campo4}`
+        document.getElementById('result').innerHTML=`vencendor foi: ${campo4}`
+        return true
     }    
      if(campo7==campo8&& campo8==campo9){
-        document.getElementById('result').innerHTML=`o vencendor foi: ${campo7}`
+        document.getElementById('result').innerHTML=`vencendor foi: ${campo7}`
+        return true
     }
     if(campo2==campo5&& campo5==campo8){
-        document.getElementById('result').innerHTML=`o vencendor foi: ${campo2}`
+        document.getElementById('result').innerHTML=`vencendor foi: ${campo2}`
+        return true
     }
     if(campo3==campo6&& campo6==campo9){
-        document.getElementById('result').innerHTML=`o vencendor foi: ${campo3}`
+        document.getElementById('result').innerHTML=`vencendor foi: ${campo3}`
+        return true
     }
     if(campo==campo5&& campo5==campo9){
-        document.getElementById('result').innerHTML=`o vencendor foi: ${campo}`
+        document.getElementById('result').innerHTML=`vencendor foi: ${campo}`
+        return true
     }
     if(campo3==campo5&& campo5==campo7){
-        document.getElementById('result').innerHTML=`o vencendor foi: ${campo3}`
+        document.getElementById('result').innerHTML=`vencendor foi: ${campo3}`
+        return true
     }
 }
