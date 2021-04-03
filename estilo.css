@@ -63,9 +63,10 @@ body{
 }
 
 @media screen and (max-device-width: 510px) {
-	#principal {
-		width: 84%;
+   #principal {
+	width: 84%;
         left: 2.5em;
+	top: 3em;
 	}
     .title{
         width: 65%;
@@ -73,7 +74,6 @@ body{
     }
     #result{
         left: 0;
-        top:3em;
     }
 }
 
